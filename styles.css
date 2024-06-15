@@ -115,6 +115,19 @@ hr.new {
   border-top: 2px solid lightcoral;
   border-radius: 50px;
 }
+.img4 {
+  width: 50px;
+  margin: 5px;
+  margin: 0px 20px 25px 0px;
+  transition: transform 0.2s;
+  float: right;
+}
+.img4:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
 @media screen and (max-width: 400px) {
   .img1 {
     width: 100px;
