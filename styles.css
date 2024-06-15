@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: beige;
+}
+.center {
+  text-align: center;
+}
+.header {
+  padding: 15px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  justify-self: auto;
+  list-style-type: none;
+  padding: 0px 10px;
+}
+nav ul li {
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+nav ul li a::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+div.about {
+  width: 80%;
+  margin: auto;
+}
+.indent {
+  text-indent: 40px;
+}
+.justify {
+  text-align: justify;
+}
+.about-para {
+  padding: 25px;
+}
+.img1 {
+  display: flex;
+  margin: auto;
+  border: solid 2px black;
+  border-radius: 250px;
+  width: 250px;
+}
+.img2 {
+  max-width: 120px;
+  padding: 5px;
+}
+.contact {
+  display: flex;
+  justify-content: space-around;
+}
+.img3 {
+  width: 50px;
+  margin: 5px;
+  transition: transform 0.2s;
+}
+.img3:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.about-head {
+  padding-top: 25px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  background-color: #eedcdc;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  flex: 30%;
+}
+.flex-container div:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -ms-transform: scale(1.005); /* IE 9 */
+  -webkit-transform: scale(1.005); /* Safari 3-8 */
+  transform: scale(1.005);
+}
+hr.new {
+  border-top: 2px solid lightcoral;
+  border-radius: 50px;
+}
+@media screen and (max-width: 400px) {
+  .img1 {
+    width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
