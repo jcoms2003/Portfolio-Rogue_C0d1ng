@@ -3,6 +3,7 @@
 }
 body {
   background-color: beige;
+  font-family: "Times New Roman", Times, serif;
 }
 .center {
   text-align: center;
@@ -51,6 +52,7 @@ nav ul li a:hover:after {
 div.about {
   width: 80%;
   margin: auto;
+  line-height: 20px;
 }
 .indent {
   text-indent: 40px;
