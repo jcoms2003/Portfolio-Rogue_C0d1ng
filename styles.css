@@ -1,12 +1,29 @@
+:root {
+    --bg-dark: #0D0F12;
+    --bg-darker: #121417;
+
+    --accent-teal: #2EE6C8;
+    --accent-indigo: #4B5DFF;
+    --accent-purple: #7A3FFF;
+
+    --text-light: #F2F3F7;
+    --text-gray: #C7C9D1;
+    --text-muted: #9A9CA3;
+
+    --highlight-mint: #4FFFD7;
+    --highlight-gold: #D4A857;
+}
+
 * {
   box-sizing: border-box;
 }
 body {
-  background-color: beige;
+  background-color: var(--bg-dark);
   font-family: "Times New Roman", Times, serif;
 }
 .center {
   text-align: center;
+  color: var(--text-light);
 }
 .header {
   padding: 15px;
@@ -25,7 +42,7 @@ nav ul li {
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: #9A9CA3;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.15em;
@@ -42,7 +59,7 @@ nav ul li a::after {
   height: 2px;
   left: 50%;
   position: absolute;
-  background: black;
+  background: var(--accent-teal);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
@@ -63,11 +80,13 @@ div.about {
 }
 .about-para {
   padding: 25px;
+  color: var(--text-light);
+
 }
 .img1 {
   display: flex;
   margin: auto;
-  border: solid 2px black;
+  border: solid 2px var(--accent-teal);
   border-radius: 250px;
   width: 250px;
 }
@@ -103,20 +122,27 @@ div.about {
 }
 
 .flex-item {
-  background-color: #eedcdc;
+  background-color: var(--bg-darker);
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
   flex: 30%;
+  color: var(--text-light);
+  border-color: var(--accent-teal);
+  border-width: 2px;
+  border-style: solid;
+  transition: transform 0.2s;
 }
 .flex-container div:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow:
+  3px 8px 16px rgba(75, 93, 255, 0.30),   /* accent-indigo */
+  3px 6px 20px rgba(0, 0, 0, 0.3);
   -ms-transform: scale(1.005); /* IE 9 */
   -webkit-transform: scale(1.005); /* Safari 3-8 */
   transform: scale(1.005);
 }
 hr.new {
-  border-top: 2px solid lightcoral;
+  border-top: 2px solid var(--accent-teal);
   border-radius: 50px;
 }
 .img4 {
