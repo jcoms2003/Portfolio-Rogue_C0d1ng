@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--aos-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="author" content="Rogue_C0ding / Joshua Comstock" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joshua Comstock | Software Developer</title>
-    <script src="scripts.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Joshua Comstock | Cybersecurity & Software Development</title>
     <!-- Fav Icon -->
     <link rel="icon" type="image/x-icon" href="RogueLogo.png" />
     <link rel="preload" src="RogueLogo.png" as="image" />
   </head>
   <body>
     <header>
-      <h2 class="center header" id="Main">
+      <h2 class="center header" id="Main" >
         Joshua Comstock | Cybersecurity & Software Development
       </h2>
     </header>
@@ -28,8 +30,8 @@
     </nav>
     <!-- about -->
     <section>
-      <img src="profile.jpg" alt="logo" class="img1" />
-      <div class="about" id="About">
+      <img src="profile.jpg" alt="logo" class="img1" data-aos="zoom-in" />
+      <div class="about" id="About" data-aos="fade-up" data-aos-delay="150">
         <h2 class="center about-head">About Me</h2>
         <p class="justify indent about-para">
           I’m a former United States Marine transitioning into the tech field with a strong focus on 
@@ -48,22 +50,22 @@
         </p>
       </div>
     </section>
-    <section>
+    <section data-aos="fade-up">
       <h2 class="center" id="Skills">Skills and Projects</h2>
       <hr class="new" />
       <div class="flex-container">
         <!-- container -->
-        <div class="flex-item">
+        <div class="flex-item" data-aos="zoom-in">
           <a
             href="https://jcoms2003.github.io/SoftwareDevelopmentV2-Responsive/MainPageSD.html"
             target="_blank"
           >
-            <img src="show1img.jpg" alt="image" class="img2" />
+            <img src="show1img.jpg" alt="image" class="img2"/>
           </a>
           <p>Open source Website for software development job research.</p>
         </div>
         <!-- section -->
-        <div class="flex-item">
+        <div class="flex-item" data-aos="zoom-in">
           <a
             href="https://jcoms2003.github.io/CodeBeginner2Pro-Website/index.html"
             target="_blank"
@@ -76,7 +78,7 @@
           </p>
         </div>
         <!-- section -->
-        <div class="flex-item">
+        <div class="flex-item" data-aos="zoom-in">
           <a
             href="https://jcoms2003.github.io/PythonIntroductionV2/HomePage.html"
             target="_blank"
@@ -89,21 +91,21 @@
           </p>
         </div>
         <!-- section w3schools css-->
-        <div class="flex-item">
+        <div class="flex-item" data-aos="zoom-in">
           <a href="https://verify.w3schools.com/62DJKUV4R" target="_blank">
             <img src="w3logo.png" alt="image" class="img2" />
           </a>
           <p>CSS Certification</p>
         </div>
         <!-- section w3shools html-->
-        <div class="flex-item">
+        <div class="flex-item" data-aos="zoom-in">
           <a href="https://verify.w3schools.com/1ONE464K5P" target="_blank">
             <img src="w3logo.png" alt="image" class="img2" />
           </a>
           <p>HTML Certification</p>
         </div>
         <!-- section google cert-->
-        <div class="flex-item">
+        <div class="flex-item" data-aos="zoom-in">
           <a href="https://www.credly.com/badges/76d8d8bb-4624-4094-8665-2133faa6c902/public_url" target="_blank">
             <img src="GoogleCert.png" alt="image" class="img2" />
           </a>
@@ -133,10 +135,14 @@
     </section>
     <!-- footer -->
     <footer>
+      <div class="dark-mode-toggle">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+      </div>
       <h3 class="center">&#169; 2026 Rogue_C0d1ng</h3>
       <a href="#Main">
         <img src="upArrow.png" alt="up" class="img4" />
       </a>
     </footer>
+    <script src="scripts.js"></script>
   </body>
 </html>
