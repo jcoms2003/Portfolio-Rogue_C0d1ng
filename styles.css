@@ -64,7 +64,6 @@ nav ul li a {
   text-decoration: none;
   color: #9A9CA3;
   text-transform: uppercase;
-  text-decoration: none;
   letter-spacing: 0.15em;
   display: inline-block;
   padding: 15px 20px;
@@ -122,6 +121,7 @@ div.about {
   max-width: 120px;
   padding: 5px;
   border-radius: 10px;
+  float: top;
 }
 .contact {
   display: flex;
@@ -140,6 +140,7 @@ div.about {
   box-shadow:
   3px 8px 16px rgba(75, 93, 255, 0.30),   /* accent-indigo */
   3px 6px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 .about-head {
   padding-top: 25px;
@@ -164,14 +165,29 @@ div.about {
   border-width: 2px;
   border-style: solid;
   transition: transform 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-light);
 }
+
 
 .skills {
   margin-top: 50px;
   font-size: 35px;
 }
 
-
+.upArrow{
+  border: var(--accent-teal) solid 2px;
+  border-radius: 10px;
+  background-color: var(--bg-darker);
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  float: right;
+  width: 40px;
+  transition: transform 0.2s;
+}
 
 .flex-container .flex-item:hover {
   box-shadow:
