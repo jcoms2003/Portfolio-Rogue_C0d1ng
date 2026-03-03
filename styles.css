@@ -112,10 +112,11 @@ div.about {
 }
 .img1 {
   display: flex;
-  margin: auto;
+  margin: 30px 0 50px 0;
   border: solid 2px var(--accent-teal);
   border-radius: 250px;
-  width: 250px;
+  width: 300px;
+  justify-self: center;
 }
 .img2 {
   max-width: 120px;
@@ -149,31 +150,41 @@ div.about {
   flex-direction: row;
   text-align: center;
   flex-wrap: wrap;
+  margin: 25px;
 }
 
 .flex-item {
   background-color: var(--bg-darker);
   border-radius: 20px;
   padding: 10px;
-  margin: 10px;
+  margin: 20px;
   flex: 30%;
   color: var(--text-light);
   border-color: var(--accent-teal);
   border-width: 2px;
   border-style: solid;
-  transition: transform 0.2s;
+  transition: transform 0.5s;
 }
-.flex-container div:hover {
+
+.skills {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+
+
+.flex-container .flex-item:hover {
   box-shadow:
   3px 8px 16px rgba(75, 93, 255, 0.30),   /* accent-indigo */
   3px 6px 20px rgba(0, 0, 0, 0.3);
   -ms-transform: scale(1.005); /* IE 9 */
   -webkit-transform: scale(1.005); /* Safari 3-8 */
-  transform: translateY(-6px) scale(1.03)
+  transform: translateY(-6px) scale(1.02)
 }
-hr.new {
+hr.horizontal {
   border-top: 2px solid var(--accent-teal);
   border-radius: 50px;
+  margin: 50px;
 }
 .img4 {
   width: 50px;
