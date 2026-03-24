@@ -1,0 +1,37 @@
+User-agent: *
+Allow: /
+
+# Block OpenAI / GPT
+User-agent: GPTBot
+Disallow: /
+
+# Block OpenAI's data crawler
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Block Anthropic (Claude)
+User-agent: ClaudeBot
+Disallow: /
+
+# Block Google AI crawler
+User-agent: Google-Extended
+Disallow: /
+
+# Block Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# Block Meta AI
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# Block Amazon's AI crawler
+User-agent: Amazonbot
+Disallow: /
+
+# Block CommonCrawl (feeds many AI datasets)
+User-agent: CCBot
+Disallow: /
+
+# Optional: enable if you create a sitemap
+# Sitemap: https://jcoms2003.github.io/Portfolio-Rogue_C0d1ng/sitemap.xml
