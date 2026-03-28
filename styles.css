@@ -233,6 +233,7 @@ hr.horizontal {
 @media (max-width: 480px) {
   .img1 {
     width: 100px;
+    justify-self: center;
   }
 }
 
